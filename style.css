@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+}
+ 
+nav {
+   width: 100%;
+}
+ 
+ nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 150px;
+    padding-left: 40px;
+ }
+
+ ul li, a{
+    text-decoration: none;
+    list-style: none;
+    color: #090909;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:lighter
+ }
