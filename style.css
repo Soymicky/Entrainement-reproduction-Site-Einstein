@@ -9,6 +9,7 @@ header{
  
 nav {
    width: 100%;
+   position: static;
 }
  
  nav ul{
@@ -82,7 +83,11 @@ main{
    margin: 90px;
    display: flex;
    padding-left: 90px;
+   justify-content: center;
    padding-right: 90px;
+   scrollbar-width: 600px;
+   
+   
 }
 
 .grid-container {
@@ -109,7 +114,11 @@ main{
 /* Partie texte */
 
 .bio-part{
-   margin-left: 20px
+   margin-left: 20px;
+   width: 400px;
+   height: 700px;
+   overflow: hidden;
+   overflow-y: scroll;
 }
 
 .bio-part h5{
@@ -134,7 +143,7 @@ footer{
 .social-media{
    display: flex;
    padding-top: 30px;
-   margin: 0 80px;
+   margin: 0 200px;
    justify-content: space-between;
    
 }
