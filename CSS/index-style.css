@@ -25,7 +25,7 @@ nav {
     list-style: none;
     color: #090909;
     font-family:'Courier New', Courier, monospace;
-    font-weight:lighter
+    font-weight:lighter;
  }
 
 /* Partie introduction */
@@ -103,7 +103,7 @@ main{
 
 .grid-container {
    display: grid;
-   grid-template-columns: repeat(2; 1fr);
+   grid-template-columns: repeat(2, 1fr);
    gap: 10px;
    text-align: center;
 }
