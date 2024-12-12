@@ -89,17 +89,24 @@ main{
    
    
 }
+::-webkit-scrollbar{
+   width: 10px;
+}
+
+
+
+::-webkit-scrollbar-thumb{
+   background-color: #949494;
+
+}
+
 
 .grid-container {
    display: grid;
    grid-template-columns: repeat(2; 1fr);
    gap : 10px;
    text-align: center;
-   
-   
 }
-
-
 
 .img3{
    grid-column: span 2;
@@ -116,7 +123,7 @@ main{
 .bio-part{
    margin-left: 20px;
    width: 400px;
-   height: 700px;
+   height: 740px;
    overflow: hidden;
    overflow-y: scroll;
 }
@@ -146,4 +153,9 @@ footer{
    margin: 0 200px;
    justify-content: space-between;
    
+}
+
+footer img {
+   border: solid 1px white;
+   border-radius: 50px ;
 }
