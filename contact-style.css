@@ -25,26 +25,75 @@ nav {
     font-weight:lighter;
  }
 
- /* Partie introduction */
+ /* Partie main */
 
- .intro-expe{
-   background: url(../einstein/depuis-quand-mesure-t_on-le-temps.jpg);
-   background-size: cover;
-   height: 400px;
-   outline: thick double #e9a8ff;
-   margin: 0;
-   padding: 0;
- }
- 
+ /* Petit header */
 
- .intro-expe h1 {
-   text-align: center;
-   font-size: 70px;
-   font-weight: 300;
-   color: #e9a8ff;
-   margin: 0;
-   padding-top: 40px;
+ main{
+    background-color: #5559a2;
+    width: 100%;
+    padding: 200px 0;
  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #0e1c44;
+    padding: 80px;
+
+    
+}
+
+.container h1{
+    margin: 0;
+    color: white;
+}
+/* Masquer le label avec le nom attribué */
+form label {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    border: 0;
+}
+/* Mettre en colonne la partie droite du formulaire */
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-left: 200px;      
+}
+
+.container h1 {
+    font-size: 60px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1em;
+    
+
+}
+
+
+.container input,textarea {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    border-bottom: solid 1px #606164;
+   
+   
+}
+
+.container input::placeholder, textarea::placeholder {
+    color: #606164;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form textarea {
+    display: flex;
+    align-content: flex-end;
+}
+
 
 /* Partie footer */
 footer{
