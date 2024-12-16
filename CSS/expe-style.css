@@ -110,7 +110,7 @@ main {
    top: 0;
    left: 0;
    z-index: 10;
-   opacity: 0;
+   visibility: hidden;
 
 }
 
@@ -136,11 +136,10 @@ main {
    border: ridge 15px #aab8fc;
    background-color: #4b5196;
    overflow-y: scroll;
-   opacity: 1;
+   visibility:visible;
    width: 400px;
    height: 100;
    object-fit: cover;
-
    transform: scale(1.1);
    transition: 0.2s ease;
    
