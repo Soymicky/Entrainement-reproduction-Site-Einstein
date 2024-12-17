@@ -32,67 +32,77 @@ nav {
  main{
     background-color: #5559a2;
     width: 100%;
-    padding: 200px 0;
+    height: 100vh;
  }
 
-.container{
+.container { 
+    margin: auto;
+    width: 50%;
+    height: 350px;
+    
+  
+}
+/* Les puces */
+
+.puce_container {
+    background-color: #092674;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.puce_couleur {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    
+}
+
+.puce_couleur .rouge, .vert, .jaune {
+    margin: 5px;
+    border-radius: 50px;
+}
+
+
+.puce_couleur .jaune {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+}
+
+.puce_couleur .vert {
+    width: 10px;
+    height: 10px;
+    background-color: green; 
+}
+
+.puce_couleur .rouge {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+} 
+
+
+.puce_grise {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.puce_grise .p1, .p2, .p3 {
+    background-color: gray;
+    width: 5px;
+    height: 5px;
+    margin: 1px;
+    border-radius: 50px;
+}
+
+ .container {
     background-color: #0e1c44;
-    padding: 80px;
-
-    
-}
-
-.container h1{
-    margin: 0;
-    color: white;
-}
-/* Masquer le label avec le nom attribué */
-form label {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-    border: 0;
-}
-/* Mettre en colonne la partie droite du formulaire */
-form div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    padding-left: 200px;      
-}
-
-.container h1 {
-    font-size: 60px;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    line-height: 1em;
-    
-
-}
+ }
 
 
-.container input,textarea {
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    border-bottom: solid 1px #606164;
-   
-   
-}
-
-.container input::placeholder, textarea::placeholder {
-    color: #606164;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-form textarea {
-    display: flex;
-    align-content: flex-end;
-}
 
 
 /* Partie footer */
